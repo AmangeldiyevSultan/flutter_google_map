@@ -1,7 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_google_map/convert_latlang_to_address.dart';
-import 'package:flutter_google_map/google_places_api_search.dart';
-import 'package:flutter_google_map/home_screen.dart';
+import 'package:flutter_google_map/features/screens/google_map.dart';
 
 void main() {
   runApp(const MyApp());
@@ -18,7 +16,7 @@ class MyApp extends StatelessWidget {
       theme: ThemeData(
         primarySwatch: Colors.blue,
       ),
-      home: const GooglePlacesApiSearchScreen(),
+      home: const GoogleMapScreen(),
     );
   }
 }
